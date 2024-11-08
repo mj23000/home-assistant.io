@@ -46,7 +46,7 @@ Device model:
   description: The model name of your Bang & Olufsen device. This is used to determine some capabilities of the device. If the device is not in the list yet, choose a product similar to yours.
   required: true
   type: string
-{% endconfiguration_basic %} 
+{% endconfiguration_basic %}
 
 ## Actions
 
