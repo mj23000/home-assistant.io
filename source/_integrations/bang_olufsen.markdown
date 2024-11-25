@@ -33,7 +33,7 @@ Devices that have been tested and _should_ work without any trouble are:
 - [Beosound Level](https://www.bang-olufsen.com/en/dk/speakers/beosound-level)
 - [Beosound Theatre](https://www.bang-olufsen.com/en/dk/soundbars/beosound-theatre)
 
-and any other [Mozart](https://support.bang-olufsen.com/hc/en-us/articles/24766979863441-Which-platform-is-my-Connected-Audio-product-based-on) based product. This means all [Connected Speakers](https://www.bang-olufsen.com/en/dk/story/connected-speakers) that have been launched after 2020.
+and any other [Mozart](https://support.bang-olufsen.com/hc/en-us/articles/24766979863441-Which-platform-is-my-Connected-Audio-product-based-on) based products. This means all [Connected Speakers](https://www.bang-olufsen.com/en/dk/story/connected-speakers) that have been launched after 2020.
 
 {% include integrations/config_flow.md %}
 
