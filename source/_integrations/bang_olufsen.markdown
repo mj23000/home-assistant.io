@@ -48,6 +48,9 @@ Device model:
   type: string
 {% endconfiguration_basic %}
 
+## Data updates
+
+The `Bang & Olufsen` integration uses the [Mozart API](https://bang-olufsen.github.io/mozart-open-api), which is a local REST API with a WebSocket notification channel for immediate state information for metadata, playback progress, volume etc. The only exception to this is repeat and shuffle controls which are polled every 30 seconds.
 
 ## Actions
 
