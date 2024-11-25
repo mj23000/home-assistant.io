@@ -55,7 +55,6 @@ This integration follows standard integration removal, no extra steps are requir
 
 {% include integrations/remove_device_service.md %}
 
-
 ## Actions
 
 ### play_media actions
