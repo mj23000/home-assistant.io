@@ -48,7 +48,6 @@ Device model:
   type: string
 {% endconfiguration_basic %}
 
-
 ## Remove integration
 
 This integration follows standard integration removal, no extra steps are required.
