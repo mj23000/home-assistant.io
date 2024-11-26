@@ -311,5 +311,6 @@ beolink:
 ```
 
 ## Diagnostics and troubleshooting
+
 The **Bang & Olufsen** integration supports [Home Assistant debug logs and diagnostics](/docs/configuration/troubleshooting/#debug-logs-and-diagnostics).
 Where all received WebSocket events are provided through debug logs and the WebSocket connection state, config entry and media player state is provided through diagnostics.
