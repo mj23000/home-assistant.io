@@ -34,7 +34,7 @@ Devices that have been tested and _should_ work without any trouble are:
 - [Beosound Level](https://www.bang-olufsen.com/en/dk/speakers/beosound-level)
 - [Beosound Theatre](https://www.bang-olufsen.com/en/dk/soundbars/beosound-theatre)
 
-and any other Mozart based products.
+and any other [Mozart](https://support.bang-olufsen.com/hc/en-us/articles/24766979863441-Which-platform-is-my-Connected-Audio-product-based-on) based products. This means all [Connected Speakers](https://www.bang-olufsen.com/en/dk/story/connected-speakers) that have been launched after 2020.
 
 {% include integrations/config_flow.md %}
 
@@ -48,6 +48,10 @@ Device model:
   required: true
   type: string
 {% endconfiguration_basic %}
+
+## Data updates
+
+The **Bang & Olufsen** integration uses the [Mozart API](https://bang-olufsen.github.io/mozart-open-api), which is a local REST API with a WebSocket notification channel for immediate state information for media metadata, playback progress, volume etc. The only exception to this is the repeat and shuffle controls which are polled every 30 seconds.
 
 ## Actions
 
@@ -314,3 +318,9 @@ beolink:
 
 The **Bang & Olufsen** integration supports [Home Assistant debug logs and diagnostics](/docs/configuration/troubleshooting/#debug-logs-and-diagnostics).
 Where all received WebSocket events are provided through debug logs and the WebSocket connection state, config entry and media player state is provided through diagnostics.
+
+## Remove integration
+
+This integration follows standard integration removal, no extra steps are required.
+
+{% include integrations/remove_device_service.md %}
