@@ -48,6 +48,16 @@ Device model:
   type: string
 {% endconfiguration_basic %}
 
+## Supported features
+
+The Bang & Olufsen integration currently makes a single device with a `media_player` entity available for each added physical device.
+
+### Media player
+
+The media player entity enables users to see and control media curently being played on their Bang & Olufsen device. Additionally, user can play media through [play_media actions](#play_media-actions), select active sound mode, switch between source and control repeat / shuffle controls.
+
+[Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom) is available to all Mozart devices that have been added to Home Assistant through `media_player` actions. For more advanced usage, such as connecting ASE products not available in Home Assistant and expanding sessions to all discovered devices, [custom Beolink services](#custom-actions) have been defined.
+
 ## Actions
 
 ### play_media actions
