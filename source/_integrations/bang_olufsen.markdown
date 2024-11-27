@@ -9,6 +9,7 @@ ha_iot_class: Local Push
 ha_domain: bang_olufsen
 ha_platforms:
   - media_player
+  - diagnostics
 ha_codeowners:
   - "@mj23000"
 ha_config_flow: true
@@ -33,7 +34,7 @@ Devices that have been tested and _should_ work without any trouble are:
 - [Beosound Level](https://www.bang-olufsen.com/en/dk/speakers/beosound-level)
 - [Beosound Theatre](https://www.bang-olufsen.com/en/dk/soundbars/beosound-theatre)
 
-and any other Mozart based products.
+and any other [Mozart](https://support.bang-olufsen.com/hc/en-us/articles/24766979863441-Which-platform-is-my-Connected-Audio-product-based-on) based products. This means all [Connected Speakers](https://www.bang-olufsen.com/en/dk/story/connected-speakers) that have been launched after 2020.
 
 {% include integrations/config_flow.md %}
 
@@ -48,15 +49,20 @@ Device model:
   type: string
 {% endconfiguration_basic %}
 
+## Data updates
+
+The **Bang & Olufsen** integration uses the [Mozart API](https://bang-olufsen.github.io/mozart-open-api), which is a local REST API with a WebSocket notification channel for immediate state information for media metadata, playback progress, volume etc. The only exception to this is the repeat and shuffle controls which are polled every 30 seconds.
+
 ## Supported features
 
-The Bang & Olufsen integration currently makes a single device with a `media_player` entity available for each added physical device.
+Currently a single device with a `media_player` entity is created for each added physical device.
+For advanced automations, [events](#automations) are fired in Home Assistant for 
 
 ### Media player
 
-The media player entity enables users to see and control media curently being played on their Bang & Olufsen device. Additionally, user can play media through [play_media actions](#play_media-actions), select active sound mode, switch between source and control repeat / shuffle controls.
+The media player entity enables users to see and control media curently being played on their Bang & Olufsen device. Additionally, users can play media through [play_media actions](#play_media-actions), select active sound mode, switch between sources and control repeat / shuffle settings.
 
-[Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom) is available to all Mozart devices that have been added to Home Assistant through `media_player` actions. For more advanced usage, such as connecting ASE products not available in Home Assistant and expanding sessions to all discovered devices, [custom Beolink services](#custom-actions) have been defined.
+[Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom) is available to all Mozart devices that have been added to Home Assistant through `media_player` actions. For more advanced usage, such as connecting [ASE](https://support.bang-olufsen.com/hc/en-us/articles/24766979863441-Which-platform-is-my-Connected-Audio-product-based-on) products not available in Home Assistant or expanding sessions to all discovered devices, [custom Beolink services](#custom-actions) have been defined, with current [Beolink state](#beolink) available in media player properties.
 
 ## Actions
 
@@ -318,3 +324,14 @@ beolink:
   listeners: Beolink listeners (if available)
   peers: Beolink peers (if available)
 ```
+
+## Diagnostics and troubleshooting
+
+The **Bang & Olufsen** integration supports [Home Assistant debug logs and diagnostics](/docs/configuration/troubleshooting/#debug-logs-and-diagnostics).
+Where all received WebSocket events are provided through debug logs and the WebSocket connection state, config entry and media player state is provided through diagnostics.
+
+## Remove integration
+
+This integration follows standard integration removal, no extra steps are required.
+
+{% include integrations/remove_device_service.md %}
