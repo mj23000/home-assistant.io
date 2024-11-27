@@ -55,7 +55,7 @@ The **Bang & Olufsen** integration uses the [Mozart API](https://bang-olufsen.gi
 
 ## Supported features
 
-Currently a single device with a `media_player` entity is created for each added physical device. For advanced automations, [events](#automations) are fired in Home Assistant.
+Currently, a single device with a `media_player` entity is created for each added physical device. For advanced automations, [events](#automations) are fired in Home Assistant.
 
 ### Media player
 
