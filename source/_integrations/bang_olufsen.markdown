@@ -48,6 +48,18 @@ Device model:
 
 The **Bang & Olufsen** integration uses the [Mozart API](https://bang-olufsen.github.io/mozart-open-api), which is a local REST API with a WebSocket notification channel for immediate state information for media metadata, playback progress, volume etc. The only exception to this is the repeat and shuffle controls which are polled every 30 seconds.
 
+## Limitations
+Currently the integration lacks a number of features of the Mozart platform such as:
+
+- Show and change current [listening position](https://support.bang-olufsen.com/hc/en-us/articles/8581014415377-What-is-a-Listening-Position)
+- Battery status of compatible devices
+- In depth metadata about incoming audio signal
+
+And while automations can be configured to listen to [fired events](#automations), they could be handled easier through:
+- Event entities for physical controls on device
+- Event entities for paired [Beormote One](https://www.bang-olufsen.com/en/dk/accessories/beoremote-one)
+- Event entity for built-in proximity sensor for supported models.
+
 ## Actions
 
 ### play_media actions
