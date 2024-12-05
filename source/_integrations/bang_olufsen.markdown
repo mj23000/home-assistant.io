@@ -259,9 +259,10 @@ The Bang & Olufsen integration additionally supports different custom actions
 
 Join a Beolink experience.
 
-| Action data attribute | Optional | Description                           |
-| --------------------- | -------- | ------------------------------------- |
-| `beolink_jid`         | yes      | Manually specify Beolink JID to join. |
+| Action data attribute | Optional | Description                                                                                                                                                                                    |
+| --------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `beolink_jid`         | yes      | Manually specify Beolink JID to join.                                                                                                                                                          |
+| `source_id`           | yes      | Specify which source to join, behavior varies between platforms. Source names prefaced by a platform name can only be used when connecting to that platform. A defined Beolink JID is required |
 
 #### `bang_olufsen.beolink_expand`
 
