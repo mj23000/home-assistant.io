@@ -59,7 +59,7 @@ A number of features are available through the media player entity:
 
 - See current metadata, progress, volume etc.
 - Control next/previous, play/pause, shuffle/repeat settings, volume, sound mode, audio and video sources and more.
-- Play various supported media through [play_media actions](#play_media-actions).
+- Play various media through [play_media actions](#play_media-actions).
 - Control multiroom audio through [Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom) for Mozart devices that have been added to Home Assistant through `media_player` actions. For more advanced usage, such as connecting [ASE](https://support.bang-olufsen.com/hc/en-us/articles/24766979863441-Which-platform-is-my-Connected-Audio-product-based-on) products not available in Home Assistant or expanding sessions to all discovered devices, [custom Beolink services](#custom-actions) have been defined, with current [Beolink state](#beolink) available in media player properties.
 
 ## Actions
