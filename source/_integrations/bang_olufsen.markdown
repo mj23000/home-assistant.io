@@ -57,8 +57,8 @@ Currently, a single device with a `media_player` entity is created for each adde
 
 A number of features are available through the media player entity:
 
-- See current metadata, progress, volume etc.
-- Control next/previous, play/pause, shuffle/repeat settings, volume, sound mode, audio and video sources and more.
+- See current metadata, progress, volume, etc.
+- Control next/previous, play/pause, shuffle/repeat settings, volume, sound mode, audio and video sources, and more.
 - Play various media through [play_media actions](#play_media-actions).
 - Control multiroom audio through [Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom):
   - Control with Home Assistant media_player grouping.
