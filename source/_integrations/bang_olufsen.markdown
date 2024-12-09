@@ -75,7 +75,7 @@ Currently some features of the Mozart platform such as:
 - Creating timers and alarms
 - Retrieving detailed alarm and timer information
 
-and more advanced app-centric features such as:
+And more advanced app-centric features such as:
 - Creating presets
 - Creating listening positions
 - Creating sound modes
@@ -83,7 +83,7 @@ and more advanced app-centric features such as:
 - Adjusting specific sound settings
 - Pairing remotes
 
-Are not available through the API. Some may become available, but until then the the [Bang & Olufsen App](https://www.bang-olufsen.com/en/dk/story/apps) can be used to configure these settings and features.
+Are not available through the API. Some may become available at a later point, but until then the [Bang & Olufsen App](https://www.bang-olufsen.com/en/dk/story/apps) can be used to configure these settings and features.
 
 ## Actions
 
