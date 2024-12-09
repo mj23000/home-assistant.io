@@ -51,16 +51,19 @@ The **Bang & Olufsen** integration uses the [Mozart API](https://bang-olufsen.gi
 
 ## Limitations
 
-Currently the integration lacks a number of features of the Mozart platform such as:
+Currently some features of the Mozart platform such as:
+- Creating timers and alarms
+- Retrieving detailed alarm and timer information
 
-- Show and change current [listening position](https://support.bang-olufsen.com/hc/en-us/articles/8581014415377-What-is-a-Listening-Position)
-- Battery status of compatible devices
-- In depth metadata about incoming audio signal
+and more advanced app-centric features such as:
+- Creating presets
+- Creating listening positions
+- Creating sound modes
+- Creating stereo pairs
+- Adjusting specific sound settings
+- Pairing remotes
 
-And while automations can be configured to listen to [fired events](#automations), they could be handled easier through:
-- Event entities for physical controls on device
-- Event entities for paired [Beoremote One](https://www.bang-olufsen.com/en/dk/accessories/beoremote-one)
-- Event entity for built-in proximity sensor for supported models.
+Are not available through the API. Some may become available, but until then the the [Bang & Olufsen App](https://www.bang-olufsen.com/en/dk/story/apps) can be used to configure these settings and features.
 
 ## Actions
 
