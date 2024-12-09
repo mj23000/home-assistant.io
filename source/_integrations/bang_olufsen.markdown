@@ -71,11 +71,13 @@ A number of features are available through the media player entity:
 
 ## Limitations
 
-Currently some features of the Mozart platform such as:
+Currently, some features of the Mozart platform such as:
+
 - Creating timers and alarms
 - Retrieving detailed alarm and timer information
 
 And more advanced app-centric features such as:
+
 - Creating presets
 - Creating listening positions
 - Creating sound modes
@@ -83,7 +85,7 @@ And more advanced app-centric features such as:
 - Adjusting specific sound settings
 - Pairing remotes
 
-Are not available through the API. Some may become available at a later point, but until then the [Bang & Olufsen App](https://www.bang-olufsen.com/en/dk/story/apps) can be used to configure these settings and features.
+These features are not available through the API. Some may become available at a later point, but until then the [Bang & Olufsen App](https://www.bang-olufsen.com/en/dk/story/apps) can be used to configure these settings and features.
 
 ## Actions
 
