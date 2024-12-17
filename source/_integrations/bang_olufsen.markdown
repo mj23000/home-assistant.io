@@ -289,7 +289,7 @@ data:
 
 The Bang & Olufsen integration additionally supports different custom actions for Beolink. 
 
-[Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom) is Bang & Olufsen's advanced multi-room audio solution. This integration supports Home Assistant's `media_player` grouping, but to fully benefit from Beolink, such as being able to join legacy devices not added in Home Assistant, custom actions have been defined.
+[Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom) is Bang & Olufsen's advanced multiroom audio solution. This integration supports Home Assistant's `media_player` grouping, but to fully benefit from Beolink, such as being able to join legacy devices not added in Home Assistant, custom actions have been defined.
 
 #### `bang_olufsen.beolink_join`
 
@@ -321,7 +321,7 @@ data:
 ```
 
 
-##### Join a specific active beolink experience:
+##### Join a specific active beolink experience
 
 ```yaml
 action: bang_olufsen.beolink_join
@@ -331,7 +331,7 @@ data:
   beolink_jid: 1111.2222222.33333333@products.bang-olufsen.com
 ```
 
-##### Join the "radio" source on a Beolink Converter NL/ML:
+##### Join the "radio" source on a Beolink Converter NL/ML
 
 ```yaml
 action: bang_olufsen.beolink_join
@@ -363,7 +363,7 @@ Expand current Beolink experience.
 | `beolink_jids`        | yes      | Specify which Beolink JIDs will join current Beolink experience. |
 
 
-##### Expand an active Beolink experience to all other devices discovered by the defined device:
+##### Expand an active Beolink experience to all other devices discovered by the defined device
 
 ```yaml
 action: bang_olufsen.beolink_expand
@@ -373,7 +373,7 @@ data:
   all_discovered: true
 ```
 
-##### Expand an active Beolink experience to a specific device:
+##### Expand an active Beolink experience to a specific device
 
 ```yaml
 action: bang_olufsen.beolink_expand
@@ -395,7 +395,7 @@ data:
     - media_player.beosound_balance_33333333
 ```
 
-##### Expand an active Beolink experience to specific devices:
+##### Expand an active Beolink experience to specific devices
 
 ```yaml
 action: bang_olufsen.beolink_expand
@@ -427,7 +427,7 @@ Unexpand from current Beolink experience.
 | --------------------- | -------- | ---------------------------------------------------------------------- |
 | `beolink_jids`        | no       | Specify which Beolink JIDs will leave from current Beolink experience. |
 
-##### Remove a device from an active Beolink experience:
+##### Remove a device from an active Beolink experience
 
 ```yaml
 action: bang_olufsen.beolink_expand
@@ -438,7 +438,7 @@ data:
     - 1111.2222222.33333333@products.bang-olufsen.com
 ```
 
-##### Remove devices from an active Beolink experience:
+##### Remove devices from an active Beolink experience
 
 ```yaml
 action: bang_olufsen.beolink_expand
