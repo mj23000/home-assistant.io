@@ -289,7 +289,7 @@ data:
 
 The Bang & Olufsen integration additionally supports different custom actions for Beolink. 
 
-[Beolink](https://www.bang-olufsen.com/en/dk/story/beolink-history) is Bang & Olufsen's advanced multi-room audio solution. This integration supports Home Assistant's `media_player` grouping, but to fully benefit from Beolink, such as being able to join legacy devices not added in Home Assistant, custom actions have been defined.
+[Beolink]([Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom)) is Bang & Olufsen's advanced multi-room audio solution. This integration supports Home Assistant's `media_player` grouping, but to fully benefit from Beolink, such as being able to join legacy devices not added in Home Assistant, custom actions have been defined.
 
 #### `bang_olufsen.beolink_join`
 
