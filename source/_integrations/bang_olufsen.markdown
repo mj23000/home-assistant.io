@@ -287,7 +287,7 @@ data:
 
 ### Custom actions
 
-The Bang & Olufsen integration additionally supports different custom actions for Beolink. 
+The Bang & Olufsen integration additionally supports different custom actions for Beolink.
 
 [Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom) is Bang & Olufsen's advanced multiroom audio solution. This integration supports Home Assistant's `media_player` grouping, but to fully benefit from Beolink, such as being able to join legacy devices not added in Home Assistant, custom actions have been defined.
 
@@ -319,7 +319,6 @@ target:
 data:
   group_members:
 ```
-
 
 ##### Join a specific active beolink experience
 
@@ -361,7 +360,6 @@ Expand current Beolink experience.
 | --------------------- | -------- | ---------------------------------------------------------------- |
 | `all_discovered`      | yes      | Expand Beolink experience to all discovered devices.             |
 | `beolink_jids`        | yes      | Specify which Beolink JIDs will join current Beolink experience. |
-
 
 ##### Expand an active Beolink experience to all other devices discovered by the defined device
 
@@ -430,7 +428,7 @@ Unexpand from current Beolink experience.
 ##### Remove a device from an active Beolink experience
 
 ```yaml
-action: bang_olufsen.beolink_expand
+action: bang_olufsen.beolink_unexpand
 target:
   entity_id: media_player.beosound_balance_12345678
 data:
@@ -441,7 +439,7 @@ data:
 ##### Remove devices from an active Beolink experience
 
 ```yaml
-action: bang_olufsen.beolink_expand
+action: bang_olufsen.beolink_unexpand
 target:
   entity_id: media_player.beosound_balance_12345678
 data:
@@ -449,7 +447,6 @@ data:
     - 1111.2222222.33333333@products.bang-olufsen.com
     - 4444.5555555.66666666@products.bang-olufsen.com
 ```
-
 
 #### `bang_olufsen.beolink_leave`
 
@@ -471,7 +468,6 @@ target:
   entity_id: media_player.beosound_balance_12345678
 ```
 
-
 #### `bang_olufsen.beolink_allstandby`
 
 Set all connected Beolink devices to standby.
@@ -483,7 +479,6 @@ action: bang_olufsen.beolink_allstandby
 target:
   entity_id: media_player.beosound_balance_12345678
 ```
-
 
 ## Automations
 
