@@ -291,6 +291,8 @@ The Bang & Olufsen integration additionally supports different custom actions fo
 
 [Beolink](https://support.bang-olufsen.com/hc/en-us/articles/4411572883089-What-is-Beolink-Multiroom) is Bang & Olufsen's advanced multiroom audio solution. This integration supports Home Assistant's `media_player` grouping, but to fully benefit from Beolink, such as being able to join legacy devices not added in Home Assistant, custom actions have been defined.
 
+Attempting to execute an invalid Beolink action will result in either a Home Assistant error or an audible error indication from your device.
+
 #### `bang_olufsen.beolink_join`
 
 Join a Beolink experience.
@@ -349,8 +351,6 @@ A limited selection of `source_id`s are available. The below table shows which `
 | ASE and Mozart          | `deezer`, `spotify`                        |
 | Mozart                  | `tidal`                                    |
 | Beolink Converter NL/ML | `radio`, `tp1`, `tp2`, `cd`, `aux_a`, `ph` |
-
-Trying to join an invalid source will result in either a Home Assistant error or an audible error indication from your device.
 
 #### `bang_olufsen.beolink_expand`
 
