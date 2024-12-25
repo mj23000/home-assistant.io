@@ -85,7 +85,7 @@ And more advanced app-centric features such as:
 - Adjusting specific sound settings
 - Pairing remotes
 
-These features are not available through the API. Some may become available at a later point, but until then the [Bang & Olufsen App](https://www.bang-olufsen.com/en/dk/story/apps) can be used to configure these settings and features.
+Are not available through the API. Some may become available at a later point, but until then the [Bang & Olufsen App](https://www.bang-olufsen.com/en/dk/story/apps) can be used to configure these settings and features.
 
 ## Actions
 
