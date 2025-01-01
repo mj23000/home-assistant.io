@@ -254,8 +254,7 @@ WebSocket notifications received from the device are fired as events in Home Ass
 
 ### Events
 
-Event entities are created for each of the physical "buttons" on your device. These buttons usually have their own behaviors, so using them for automations is not always ideal.
-
+Event entities are created for each of the physical controls on your device. These controls usually have their own behaviors, so using them for automations is not always ideal.
 Available event entities:
 - Bluetooth
 - Microphone
