@@ -252,11 +252,11 @@ data:
 
 WebSocket notifications received from the device are fired as events in Home Assistant. These can be received by listening to `bang_olufsen_websocket_event` event types, where `device_id` or `serial_number` can be used to differentiate devices.
 
-### Button events
+### Events
 
 Event entities are created for each of the physical "buttons" on your device. These buttons usually have their own behaviors, so using them for automations is not always ideal.
 
-Available buttons:
+Available event entities:
 - Bluetooth
 - Microphone
 - Next
@@ -268,7 +268,7 @@ Available buttons:
 - Previous
 - Volume
 
-All of these buttons support the following events:
+All of these event entities support the following event types:
 - Release of short press
 - Long press
 - Release of long press
